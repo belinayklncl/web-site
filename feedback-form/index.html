@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Mini Feedback</title>
+  </head>
+  <body>
+
+    <h2>Feedback Form</h2>
+
+    <input type="text" id="username" placeholder="Your name">
+    <br><br>
+
+    <p>Rate us:</p>
+
+    <input type="radio" name="rate" id="r1">
+    <label>Good</label><br>
+
+    <input type="radio" name="rate" id="r2">
+    <label>Bad</label><br><br>
+
+    <input type="checkbox" id="agree">
+    <label>I agree</label><br><br>
+
+    <button onclick="sendFeedback()">Send</button>
+
+    <p id="result"></p>
+
+    <script src="script.js"></script>
+  </body>
+</html>
