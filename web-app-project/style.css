@@ -182,3 +182,110 @@
     max-height: 80%;
 
 }
+.double-model {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 40px;
+
+    padding: 60px;
+
+}
+.card {
+
+    text-align: center;
+
+}
+.card img {
+
+    width: 100%;
+
+    height: 500px;
+
+    object-fit: cover;
+
+}
+.card h2 {
+
+    margin-top: 15px;
+    font-size: 28px;
+
+}
+
+.card p {
+
+    font-size: 16px;
+    margin-top: 10px;
+
+}
+.card img {
+
+    width: 100%;
+    height: 600px;
+
+    object-fit: cover;
+
+    border-radius: 5px;
+
+}
+.contact {
+
+    display: flex;
+
+    min-height: 100vh;
+
+}
+.contact-left {
+
+    width: 50%;
+
+}
+
+.contact-left img {
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+}
+.contact-right {
+
+    width: 50%;
+
+    padding: 60px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+}
+form input,
+form textarea {
+
+    width: 100%;
+
+    margin: 10px 0;
+
+    padding: 10px;
+
+    font-size: 16px;
+
+}
+button {
+
+    padding: 12px;
+
+    background: black;
+
+    color: white;
+
+    border: none;
+
+    cursor: pointer;
+
+}
