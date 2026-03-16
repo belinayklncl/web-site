@@ -1,0 +1,19 @@
+body{
+    background-color: white;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+input{
+   
+    width: 200px;
+    height: 25px;
+}
+button{
+    width:60px;
+    height: 30px;
+}
+#message{
+    width:250px;
+    height: 60px;
+}
+

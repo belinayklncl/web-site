@@ -1,17 +1,9 @@
 body {
-  text-align: center;
-  margin-top: 120px;
-  font-family: Arial, sans-serif;
+ background-color: pink;
+ text-align: center;
+ font-family:'Times New Roman', Times, serif;
 
-  background: linear-gradient(
-    -45deg,
-    #ff8888,
-    #ff4c4c,
-    #ff3131,
-    #770f0f
-  );
-  background-size: 400% 400%;
-  animation: gradientBG 10s ease infinite;
+
 }
 
 input {
@@ -32,15 +24,4 @@ button {
   color: rgb(188, 175, 255);
 }
 
-@keyframes gradientBG {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
 
