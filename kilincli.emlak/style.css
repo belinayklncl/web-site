@@ -1,0 +1,224 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #f8f8f8;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: white;
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: black;
+}
+
+/* hamburger gizli (pc) */
+.hamburger {
+  display: none;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+/* MOBİL */
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background: white;
+    padding: 15px;
+  }
+
+  .menu.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+    
+  }
+}
+
+
+.hero {
+  position: relative;
+  height: 100vh;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.3);
+  top: 0;
+  left: 0;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  z-index: 2;
+}
+
+.hero-text h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 60px;
+  letter-spacing: 3px;
+}
+
+.hero-text p {
+  font-size: 22px;
+  margin-top: 10px;
+}
+
+
+.section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.section h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+
+.services {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.box {
+  background: white;
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+
+.about {
+  max-width: 700px;
+  margin: auto;
+  font-size: 18px;
+  color: #555;
+}
+
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: #c9a45c;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.ilanlar {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.ilan {
+  background: white;
+  width: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.ilan:hover {
+  transform: translateY(-10px);
+}
+
+.ilan img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.ilan h3 {
+  padding: 10px;
+  font-size: 18px;
+}
+
+.ilan p {
+  padding: 0 10px;
+  color: #777;
+}
+
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #ffffff;
+  padding: 12px;
+  border-radius: 50%;
+  z-index: 9999;
+}
+
+.whatsapp img {
+  width: 35px;
+  height: 35px;
+}
+
+.whatsapp:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+.profil {
+  width: 150px;
+  border-radius: 50%;
+  margin: 20px 0;
+}
+.form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form input,
+.form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.form button {
+  padding: 12px;
+  background: #c9a45c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
