@@ -7,14 +7,14 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px;
+  padding: 20px 40px;
   background: white;
   position:relative;
   z-index: 1000;
 }
 
 .menu {
-  position:fixed;
+
   display:flex;
   gap: 20px;
   z-index: 1001;
@@ -226,4 +226,9 @@ body {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+}
+.menu a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
 }
