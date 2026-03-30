@@ -38,6 +38,7 @@ body {
     right: 20px;
     background: white;
     padding: 15px;
+    border-radius: 10px;
   }
 
   .menu.active {
@@ -46,6 +47,8 @@ body {
 
   .hamburger {
     display: block;
+    font-size: 28px;
+    cursor: pointer;
     
   }
 }
