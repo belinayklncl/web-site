@@ -31,10 +31,42 @@
     transform: translate(-50%, -50%);
 
     font-family: 'Cinzel', serif;
-    font-size: 60px;
+    font-size: 40px;
     color: white;
 
 }
+
+.navbar{
+
+position:fixed;
+top:0;
+left:0;
+
+width:100%;
+height:70px;
+
+background:rgba(0,0,0,0.3);
+
+z-index:1000;
+
+}
+.brand{
+
+position:absolute;
+left:50%;
+top:50%;
+
+transform:translate(-50%,-50%);
+
+color:white;
+
+font-family:'Cinzel', serif;
+font-size:17px;
+
+margin:0;
+
+}
+
 .about{
     width: 100%;
     height: 100vh;
@@ -106,7 +138,7 @@
     width: 250px;
     height: 100%;
 
-    background: black;
+    background: rgb(255, 255, 255);
 
     padding-top: 60px;
 
@@ -289,5 +321,101 @@ button {
     border: none;
 
     cursor: pointer;
+
+}
+footer{
+
+background:rgb(0, 9, 39);
+color:white;
+
+text-align:center;
+
+padding:20px;
+
+}
+/* MOBILE */
+
+@media (max-width: 768px){
+
+.navbar{
+height:60px;
+padding:0 15px;
+}
+
+.brand{
+font-size:20px;
+}
+
+.menu-btn{
+font-size:26px;
+left:15px;
+}
+
+.logo-text{
+font-size:30px;
+text-align:center;
+width:90%;
+}
+
+.about,
+.contact{
+flex-direction: column;
+height:auto;
+}
+
+.left,
+.right,
+.contact-left,
+.contact-right{
+width:100%;
+}
+
+.left img,
+.contact-left img{
+height:350px;
+}
+
+.right,
+.contact-right{
+padding:20px;
+}
+
+.gallery{
+grid-template-columns:1fr;
+padding:20px;
+}
+
+.gallery img{
+height:250px;
+}
+
+.models{
+grid-template-columns:1fr;
+padding:20px;
+}
+
+.card img{
+height:320px;
+}
+
+.right h2,
+.contact-right h2{
+font-size:28px;
+}
+
+.right p,
+.card p{
+font-size:14px;
+}
+
+form input,
+form textarea{
+font-size:14px;
+padding:8px;
+}
+
+button{
+width:100%;
+}
 
 }
